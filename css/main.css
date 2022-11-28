@@ -372,6 +372,16 @@ a {
 .header {
   padding: 43px 0;
 }
+@media only screen and (max-width: 800px) {
+  .header__container {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header__container {
+    padding: 0 24px;
+  }
+}
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -382,6 +392,12 @@ a {
   height: 26px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media only screen and (max-width: 400px) {
+  .header__logo-img {
+    width: 163px;
+    height: 18px;
+  }
 }
 .header__list {
   display: flex;
@@ -460,6 +476,8 @@ a {
     color: #333D4B;
   }
   .header__btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

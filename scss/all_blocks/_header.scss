@@ -1,6 +1,14 @@
 .header {
     padding: 43px 0;
     
+    &__container {
+        @media only screen and (max-width: 800px) {
+            padding: 0 40px;
+        }
+        @media only screen and (max-width: 600px) {
+            padding: 0 24px;
+        }
+    }
   
     &__wrapper {
         display: flex;
@@ -15,6 +23,11 @@
         width: 236px;
         height: 26px;
         object-fit: contain;
+
+        @media only screen and (max-width: 400px) {
+            width: 163px;
+            height: 18px;
+        }
     }
     
     &__nav {
@@ -87,8 +100,8 @@
 
 @media only screen and (max-width: 600px) {
     .header {
-        
         position: relative;
+
         &__container {
         }
         
@@ -97,9 +110,7 @@
         
         &__logo-link {
         }
-        
-        &__logo-img {
-        }
+     
         
         &__nav {
             display: none;
@@ -135,7 +146,9 @@
         }
         
         &__btn {
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         &__icon {
@@ -149,4 +162,5 @@
         }
     }
 }
+
 
