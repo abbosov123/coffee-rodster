@@ -326,13 +326,28 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Barlow", "Arial", sans-serif;
   display: flex;
   flex-direction: column;
 }
 
 main {
   flex-grow: 1;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -347,34 +362,105 @@ main {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.hero__container {
-  background-color: lightgreen;
+.header {
+  padding: 43px 0;
+  background-color: lightcoral;
 }
-.hero__wrapper {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.header__wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.hero__box {
-  width: 500px;
-  min-height: 600px;
-  border: 2px solid black;
-  background-image: url("./../../images/Bitmap.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.header__logo-img {
+  width: 236px;
+  height: 26px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+}
+.header__item + .header__item {
+  margin-left: 33px;
+}
+.header__nav-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+.header__nav-link:hover {
+  color: #333D4B;
+}
+.header__btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.header__icon {
+  width: 16px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header__icon--close {
+  display: none;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .hero__box {
-    background-image: url("./../../images/Bitmap2x.png");
+.header--open .header__nav {
+  display: inline-block;
+}
+.header--open .header__icon--open {
+  display: none;
+}
+.header--open .header__icon--close {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    position: relative;
+  }
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 113px);
+    background: linear-gradient(180deg, rgba(255, 183, 0, 0.83) 0%, #FEFCF7 55.94%);
+  }
+  .header__list {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .header__item + .header__item {
+    margin: 0;
+    margin-top: 32px;
+  }
+  .header__nav-link {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #333D4B;
+  }
+  .header__btn {
+    display: inline-block;
   }
 }/*# sourceMappingURL=main.css.map */

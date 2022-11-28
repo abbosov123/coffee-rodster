@@ -1,0 +1,155 @@
+.header {
+    padding: 43px 0;
+    background-color: lightcoral;
+    
+    &__container {
+    }
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__logo-link {
+    }
+    
+    &__logo-img {
+        width: 236px;
+        height: 26px;
+        object-fit: contain;
+    }
+    
+    &__nav {
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item {
+        
+        & + & {
+            margin-left: 33px;
+        }
+    }
+    
+    &__nav-link {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height, or 125% */
+        
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        
+        color: $grey;
+        
+        &:hover {
+            color: $dark;
+        }
+    }
+    
+    &__btn {
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        display: none;
+    }
+    
+    &__icon {
+        width: 16px;
+        height: 15px;
+        object-fit: contain;
+    }
+    
+    &__icon--open {
+    }
+    
+    &__icon--close {
+        display: none;
+    }
+}
+
+.header--open {
+    .header__nav {
+        display: inline-block;
+    }
+    
+    .header__icon--open {
+        display: none;
+    }
+    
+    .header__icon--close {
+        display: inline-block;
+    }  
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        
+        position: relative;
+        &__container {
+        }
+        
+        &__wrapper {
+        }
+        
+        &__logo-link {
+        }
+        
+        &__logo-img {
+        }
+        
+        &__nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 113px);
+            background: linear-gradient(180deg, rgba(255, 183, 0, 0.83) 0%, #FEFCF7 55.94%);
+        }
+        
+        &__list {
+            flex-direction: column;
+            padding-top: 40px;
+        }
+        
+        &__item {
+            & + & {
+                margin:0;
+                margin-top: 32px;
+            }
+        }
+        
+        &__nav-link {
+            font-family: 'Fraunces';
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            
+            color: $dark;
+            
+        }
+        
+        &__btn {
+            display: inline-block;
+        }
+        
+        &__icon {
+            
+        }
+        
+        &__icon--open {
+        }
+        
+        &__icon--close {
+        }
+    }
+}
+
