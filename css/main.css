@@ -350,6 +350,14 @@ a {
   text-decoration: none;
 }
 
+.starter__wrapper {
+  width: 100%;
+  height: 600px;
+  background-color: red;
+  border-radius: 50px;
+  margin-bottom: 136px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -457,7 +465,7 @@ a {
     left: 0;
     width: 100%;
     height: calc(100vh - 113px);
-    background: linear-gradient(180deg, rgba(255, 183, 0, 0.83) 0%, #FEFCF7 55.94%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(254, 252, 247, 0.596) 55.94%);
   }
   .header__list {
     flex-direction: column;
@@ -479,5 +487,114 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+.hero__container {
+  max-width: 1150px;
+}
+.hero__wrapper {
+  background-image: url("./../images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 126px;
+}
+.hero__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero__item {
+  max-width: 255px;
+  margin: 0 5px;
+}
+.hero__img {
+  margin-bottom: 71px;
+}
+.hero__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero__heading {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+  margin-bottom: 24px;
+}
+.hero__text {
+  line-height: 26px;
+  text-align: center;
+  color: #333D4B;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero__container {
+    max-width: 1150px;
+  }
+  .hero__list {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero__item {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero__item + .hero__item {
+    margin-top: 32px;
+  }
+  .hero__img {
+    margin: 0;
+  }
+  .hero__inner-wrapper {
+    align-items: flex-start;
+  }
+  .hero__heading {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero__container {
+    max-width: 1150px;
+  }
+  .hero__list {
+    width: 100%;
+  }
+  .hero__item {
+    flex-direction: column;
+  }
+  .hero__item + .hero__item {
+    margin-top: 32px;
+  }
+  .hero__img {
+    margin: 0;
+  }
+  .hero__inner-wrapper {
+    align-items: center;
+    max-width: 282px;
+  }
+  .hero__heading {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
