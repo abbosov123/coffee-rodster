@@ -489,6 +489,14 @@ a {
     justify-content: center;
   }
 }
+.hero {
+  margin-bottom: 168px;
+}
+@media only screen and (max-width: 1100px) {
+  .hero {
+    margin-bottom: 304px;
+  }
+}
 .hero__container {
   max-width: 1150px;
 }
@@ -596,5 +604,178 @@ a {
   }
   .hero__text {
     text-align: center;
+  }
+}
+.coffee__picture {
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.coffee__svg {
+  fill: red;
+  transition: all 0.5s ease;
+}
+.coffee__svg:hover {
+  fill: gold;
+  transition: all 0.5s ease;
+}
+
+.ok, .ok1, .ok2 {
+  width: 24px;
+  height: 24px;
+}
+
+.ok:hover {
+  color: green;
+}
+
+.ok1:hover {
+  color: red;
+}
+
+.ok2:hover {
+  color: gold;
+}
+
+body {
+  position: relative;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.64);
+}
+.modal__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 500px;
+  background-color: yellow;
+  transform: translate(-50%, -50%);
+}
+.modal__text {
+  font-style: 20px;
+  line-height: 30px;
+  color: red;
+  font-weight: 700;
+  padding: 20px;
+}
+.modal--open {
+  display: block;
+}
+
+.quality {
+  margin-bottom: 200px;
+}
+@media only screen and (max-width: 1100px) {
+  .quality__container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .quality__container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+.quality__wrapper {
+  position: relative;
+  background-color: #333D4B;
+  padding: 88px 85px 176px 88px;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 1100px) {
+  .quality__wrapper {
+    padding: 224px 74px 67px 74px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .quality__wrapper {
+    padding: 142px 24px 61px 24px;
+  }
+}
+.quality__left {
+  max-width: 540px;
+}
+@media only screen and (max-width: 1200px) {
+  .quality__left {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .quality__left {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.quality__heading {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 1100px) {
+  .quality__heading {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .quality__heading {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .quality__heading {
+    font-size: 140%;
+    line-height: 140%;
+  }
+}
+.quality__text {
+  line-height: 26px;
+  color: #FEFCF7;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 1100px) {
+  .quality__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+.quality__img {
+  position: absolute;
+  top: -88px;
+  right: 85px;
+  max-width: 445px;
+  max-height: 474px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1100px) {
+  .quality__img {
+    top: 0;
+    right: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 83%;
+    max-height: 320px;
+    transform: translate(50%, -50%);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .quality__img {
+    max-height: 156px;
   }
 }/*# sourceMappingURL=main.css.map */

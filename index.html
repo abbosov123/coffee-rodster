@@ -11,36 +11,38 @@
     <title>Template</title>
 </head>
 <body>
+
     
     <header class="header">
         <div class="container header__container">
+            
             <div class="header__wrapper">
                 <a class="header__logo-link" href="index.html">
                     <img class="header__logo-img" src="./images/logo.svg" alt="logo">
                 </a>
-
+                
                 <nav class="header__nav">
-                        <ul class="header__list">
-                            <li class="header__item">
-                                <a class="header__nav-link" href="#">
-                                    HOME
-                                </a>
-                            </li>
-
-                            <li class="header__item">
-                                <a class="header__nav-link" href="#">
-                                    ABOUT US
-                                </a>
-                            </li>
-
-                            <li class="header__item">
-                                <a class="header__nav-link" href="#">
-                                    Create your plan
-                                </a>
-                            </li>
-                        </ul>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__nav-link" href="#">
+                                HOME
+                            </a>
+                        </li>
+                        
+                        <li class="header__item">
+                            <a class="header__nav-link" href="#">
+                                ABOUT US
+                            </a>
+                        </li>
+                        
+                        <li class="header__item">
+                            <a class="header__nav-link" href="#">
+                                Create your plan
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
-
+                
                 <button class="header__btn">
                     <img class="header__icon header__icon--open" src="./images/burger.svg" alt="">
                     <img class="header__icon header__icon--close" src="./images/cross.svg" alt="">
@@ -55,16 +57,17 @@
                 <div class="starter__wrapper"></div>
             </div>
         </section>
+
         <section class="hero"> 
             <div class="container hero__container">
                 <div class="hero__wrapper">
                     <ul class="hero__list">
                         <li class="hero__item">
                             <img class="hero__img" src="./images/coffee1.png" alt="" srcset="./images/coffee1.png 1x, ./images/coffee1@2x.png 2x">
-
+                            
                             <div class="hero__inner-wrapper">
                                 <h3 class="hero__heading">Gran Espresso</h3>
-
+                                
                                 <p class="hero__text">
                                     Light and flavorful blend with cocoa and black pepper for an intense experience
                                 </p>
@@ -72,10 +75,10 @@
                         </li>
                         <li class="hero__item">
                             <img class="hero__img" src="./images/coffee1.png" alt="" srcset="./images/coffee1.png 1x, ./images/coffee1@2x.png 2x">
-
+                            
                             <div class="hero__inner-wrapper">
                                 <h3 class="hero__heading">Gran Espresso</h3>
-
+                                
                                 <p class="hero__text">
                                     Light and flavorful blend with cocoa and black pepper for an intense experience
                                 </p>
@@ -83,10 +86,10 @@
                         </li>
                         <li class="hero__item">
                             <img class="hero__img" src="./images/coffee1.png" alt="" srcset="./images/coffee1.png 1x, ./images/coffee1@2x.png 2x">
-
+                            
                             <div class="hero__inner-wrapper">
                                 <h3 class="hero__heading">Gran Espresso</h3>
-
+                                
                                 <p class="hero__text">
                                     Light and flavorful blend with cocoa and black pepper for an intense experience
                                 </p>
@@ -94,10 +97,10 @@
                         </li>
                         <li class="hero__item">
                             <img class="hero__img" src="./images/coffee1.png" alt="" srcset="./images/coffee1.png 1x, ./images/coffee1@2x.png 2x">
-
+                            
                             <div class="hero__inner-wrapper">
                                 <h3 class="hero__heading">Gran Espresso</h3>
-
+                                
                                 <p class="hero__text">
                                     Light and flavorful blend with cocoa and black pepper for an intense experience
                                 </p>
@@ -106,7 +109,32 @@
                     </ul>
                 </div>
             </div>
-        </section>        
+        </section> 
+       
+        <section class="quality">
+            <div class="container quality__container">
+                <div class="quality__wrapper">
+                    <div class="quality__left">
+                        <h2 class="quality__heading">
+                            Uncompromising quality
+                        </h2>
+
+                        <p class="quality__text">
+                            Although we work with growers who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast consistent, user-friendly coffee, so that brewing is easy and enjoyable.
+                        </p>
+                    </div>
+
+                    <picture>
+                        <source 
+                        media="(max-width: 1101px)"
+                        srcset="./images/cofe_min.jpg"
+                        >
+
+                        <img class="quality__img" src="./images/cofe.jpg" alt="coffee" height="474">
+                    </picture>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer class="footer">
@@ -115,8 +143,15 @@
     </footer>
     
     
-    <div class="modal"></div>
-
+    <div class="modal">
+        <div class="modal__wrapper">
+            <button>
+                <img class="modal__close" src="./images/cross.svg" alt="">
+            </button>
+            <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem recusandae perferendis aliquam dolores illo delectus nostrum sequi totam assumenda quidem corrupti, ipsa deserunt nesciunt odio doloribus velit debitis quam et non autem quae. Aut, in blanditiis. Iure quod quisquam, enim exercitationem odit amet fuga voluptates ipsa voluptas nemo libero eos at. Qui nihil alias vel ullam similique ab laudantium ipsa debitis optio unde error soluta odio corporis molestias quasi, eveniet corrupti distinctio. Quo soluta iste dolore fuga odio eaque praesentium, laborum sunt dicta expedita corrupti molestiae, vero laboriosam ratione doloremque amet. Saepe accusamus dignissimos autem officiis explicabo numquam iusto!</p>
+        </div>
+    </div>
+    
     <script src="./js/main.js"></script>
 </body>
 </html>

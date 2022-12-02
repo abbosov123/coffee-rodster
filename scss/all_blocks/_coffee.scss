@@ -1,0 +1,92 @@
+.coffee {
+    
+    &__container {
+    }
+    
+    &__wrapper {
+    }
+    
+    &__picture {
+        height: 400px;
+        object-fit: contain;
+        object-position: bottom;
+    }
+    
+    &__img {
+    }
+    
+    &__text {
+    }
+    
+    &__svg{
+        fill: red;
+        transition: all 0.5s ease;
+        
+        &:hover {
+            fill: gold;
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+.ok, .ok1, .ok2 {
+    width: 24px;
+    height: 24px;
+}
+
+.ok:hover {
+    color: green;
+}
+.ok1:hover {
+    color: red;
+}
+
+.ok2:hover {
+    color: gold;
+}
+
+
+
+// 
+body{
+    position: relative;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.64);
+    
+    
+    &__wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        max-width: 500px;
+        background-color: yellow;
+        transform: translate(-50%, -50%);
+    }
+
+    &__text {
+        font-style: 20px;
+        line-height: 30px;
+        color: red;
+        font-weight: 700;
+        padding: 20px;
+    }
+
+    &__open {
+        
+    }
+
+    &__close {
+
+    }
+}
+
+.modal--open {
+    display: block;
+}
+
